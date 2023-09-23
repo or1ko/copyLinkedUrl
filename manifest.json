@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "copy title and url",
+    "version": "1.0",
+
+    "default_locale": "en",
+  
+    "description": "Copy the current page title and url. text/plain and text/html to the clipboard.",
+  
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "activeTab",
+        "menus",
+        "clipboardWrite"
+    ]
+}

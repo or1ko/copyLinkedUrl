@@ -1,0 +1,6 @@
+{
+    "copyTitleAndLink": {
+        "message": "タイトルをリンクとしてコピー",
+        "description": "ページのタイトルとURLをコピーする。text/plain と text/htmlでクリップボードに保存する。"
+    }
+}
