@@ -16,5 +16,3 @@ In html format, it will be copied as html as follows
 ">or1ko/copyLinkedUrl</a>
 
 When pasted into Teams, the html format will be used and the link will be to the URL of this page in the title string.
-
-Translated with www.DeepL.com/Translator (free version)
