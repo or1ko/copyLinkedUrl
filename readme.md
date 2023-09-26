@@ -5,10 +5,12 @@ Created to display the link of a page in Teams with the string of the title and 
 For example, on this page,
 
 In the TEXT format, the title and URL are copied on two lines, as shown below.
+
 or1ko/copyLinkedUrl
 https://github.com/or1ko/copyLinkedUrl
 
 In html format, it will be copied as html as follows
+
 <a href="https://github.com/or1ko/copyLinkedUrl
 ">or1ko/copyLinkedUrl</a>
 
