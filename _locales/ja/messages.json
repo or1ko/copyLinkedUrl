@@ -2,5 +2,10 @@
     "copyTitleAndLink": {
         "message": "タイトルをリンクとしてコピー",
         "description": "ページのタイトルとURLをコピーする。text/plain と text/htmlでクリップボードに保存する。"
+    },
+
+    "copySelectedTextWithTitleAndLink": {
+        "message": "選択中のテキストを引用としてコピー",
+        "description": "選択中のテキストを引用としてコピーする。ページへのリンクへのリンクも含める。"
     }
 }

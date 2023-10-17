@@ -2,5 +2,9 @@
     "copyTitleAndLink": {
         "message": "Copy Title and Url",
         "description": "Copy the current page title and url. text/plain and text/html to the clipboard."
+    },
+    "copySelectedTextWithTitleAndLink": {
+        "message": "Copy the selected text As a citation.",
+        "description": "Copy the text in the selection as a citation. Include a link to a link to the page."
     }
 }

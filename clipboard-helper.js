@@ -18,6 +18,27 @@ function copyToClipboard(title, url) {
     document.execCommand("copy");
 }
 
+function copyCitationToClipboard(text, title, url) {
+    function oncopy(event) {
+        document.removeEventListener("copy", oncopy, true);
+
+        event.stopImmediatePropagation();
+
+        const ctext = text + "\n\n" + title + "\n" + url + "\n";
+
+        const safeUrl = escapeHTML(url)
+        const safeText = escapeHTML(text)
+        const html = `<blockquoute cite="${safeUrl}">${safeText}<br><a href="${safeUrl}">${title}</a></blockquote>`
+
+        event.preventDefault();
+        event.clipboardData.setData("text/plain", ctext);
+        event.clipboardData.setData("text/html", html);
+    }
+    document.addEventListener("copy", oncopy, true);
+
+    document.execCommand("copy");
+}
+
 // https://gist.github.com/Rob--W/ec23b9d6db9e56b7e4563f1544e0d546
 function escapeHTML(str) {
     // Note: string cast using String; may throw if `str` is non-serializable, e.g. a Symbol.
