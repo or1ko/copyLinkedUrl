@@ -28,7 +28,7 @@ function copyCitationToClipboard(text, title, url) {
 
         const safeUrl = escapeHTML(url)
         const safeText = escapeHTML(text)
-        const html = `<blockquoute cite="${safeUrl}">${safeText}<br><a href="${safeUrl}">${title}</a></blockquote>`
+        const html = `<blockquote>${safeText}<br><a href="${safeUrl}">${title}</a></blockquote>`
 
         event.preventDefault();
         event.clipboardData.setData("text/plain", ctext);
